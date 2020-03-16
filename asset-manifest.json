@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/onpoint/static/css/main.294a8616.chunk.css",
+    "main.js": "/onpoint/static/js/main.f88e8250.chunk.js",
+    "main.js.map": "/onpoint/static/js/main.f88e8250.chunk.js.map",
+    "runtime-main.js": "/onpoint/static/js/runtime-main.13b07ae1.js",
+    "runtime-main.js.map": "/onpoint/static/js/runtime-main.13b07ae1.js.map",
+    "static/css/2.764ccc25.chunk.css": "/onpoint/static/css/2.764ccc25.chunk.css",
+    "static/js/2.184152fe.chunk.js": "/onpoint/static/js/2.184152fe.chunk.js",
+    "static/js/2.184152fe.chunk.js.map": "/onpoint/static/js/2.184152fe.chunk.js.map",
+    "index.html": "/onpoint/index.html",
+    "precache-manifest.0919924dd6eeaab794df9ddc190445d3.js": "/onpoint/precache-manifest.0919924dd6eeaab794df9ddc190445d3.js",
+    "service-worker.js": "/onpoint/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/onpoint/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.294a8616.chunk.css.map": "/onpoint/static/css/main.294a8616.chunk.css.map",
+    "static/js/2.184152fe.chunk.js.LICENSE": "/onpoint/static/js/2.184152fe.chunk.js.LICENSE",
+    "static/media/common.scss": "/onpoint/static/media/Lato-Semibold.ddfeb01b.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.13b07ae1.js",
+    "static/css/2.764ccc25.chunk.css",
+    "static/js/2.184152fe.chunk.js",
+    "static/css/main.294a8616.chunk.css",
+    "static/js/main.f88e8250.chunk.js"
+  ]
+}
