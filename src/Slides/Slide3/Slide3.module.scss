@@ -1,0 +1,9 @@
+.wrapper {
+  display: flex;
+  width: calc(3 * 100vw);
+  transition-duration: 0.3s;
+}
+
+.slide {
+  width: 100vw;
+}

@@ -1,0 +1,40 @@
+.wrapper {
+  position: relative;
+  //overflow: hidden;
+}
+
+.lineBg,
+.line {
+  width: 127.9rem;
+  height: 2.4rem;
+  background-color: rgb(209, 234, 255);
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 50%;
+  transform: scaleX(1);
+}
+
+.lineBg {
+  opacity: 0.3;
+}
+
+.thumb {
+  position: absolute;
+  right: 0;
+  top: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(-11.1rem / 2);
+    left: calc(-8.7rem / 2);
+    width: 8.7rem;
+    height: 11.1rem;
+    background-image: url("/assets/images/slide3/thumb.png");
+    background-size: cover;
+  }
+}

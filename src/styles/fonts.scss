@@ -1,0 +1,83 @@
+// Lato family
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../assets/fonts/Lato-Light.woff2") format("woff2"),
+    url("../assets/fonts/Lato-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../assets/fonts/Lato-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Lato-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../assets/fonts/Lato-Medium.woff2") format("woff2"),
+    url("../assets/fonts/Lato-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../assets/fonts/Lato-Semibold.woff2") format("woff2"),
+    url("../assets/fonts/Lato-Semibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../assets/fonts/Lato-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Lato-Bold.woff") format("woff");
+}
+
+// Gotham family
+
+@font-face {
+  font-family: "Gotham";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../assets/fonts/GothamPro-Light.woff2") format("woff2"),
+    url("../assets/fonts/GothamPro-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../assets/fonts/GothamPro.woff2") format("woff2"),
+    url("../assets/fonts/GothamPro.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../assets/fonts/GothamPro-Medium.woff2") format("woff2"),
+    url("../assets/fonts/GothamPro-Medium.woff") format("woff");
+}

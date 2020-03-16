@@ -1,0 +1,294 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  position: relative;
+  background-image: url("/assets/images/slide3/area.png");
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 42.3rem;
+    right: 0;
+    width: 17.6rem;
+    height: 20.3rem;
+    background-image: url("/assets/images/slide3/ice33-3.png");
+    background-size: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 30.5rem;
+    width: 38.3rem;
+    height: 35.9rem;
+    background-image: url("/assets/images/slide3/ice33-2.png");
+    background-size: cover;
+  }
+}
+
+.title {
+  margin: 0;
+  padding: 23rem 0 0 17rem;
+  @include h3;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 22rem;
+    left: 0;
+    width: 6.6rem;
+    height: 7.7rem;
+    background-image: url("/assets/images/slide3/ice33-1.png");
+    background-size: cover;
+  }
+}
+
+.subtitle {
+  position: absolute;
+  top: 70rem;
+  right: 20rem;
+  margin: 0;
+  @include fontSmall($colorLight, "Lato");
+}
+
+.diagram {
+  display: block;
+  margin-top: 7.6rem;
+  margin-left: 54.5rem;
+  width: 107.6rem;
+  height: 87.5rem;
+}
+
+.keyNode {
+  position: absolute;
+  top: 100rem;
+  left: 87rem;
+  margin: 0;
+  @include h4;
+}
+
+.item {
+  position: absolute;
+}
+
+.item-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  top: 31rem;
+  left: 89rem;
+
+  .itemWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .label {
+    margin-left: 3.5rem;
+  }
+}
+
+.item-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  top: 70rem;
+  left: 67.5rem;
+  width: 35rem;
+  text-align: right;
+}
+
+.item-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  top: 70rem;
+  left: 108.5rem;
+  width: 35rem;
+  text-align: left;
+}
+
+.item-4 {
+  display: flex;
+  align-items: flex-end;
+  left: 145.5rem;
+  top: 112rem;
+
+  .itemWrapper {
+    order: 2;
+  }
+
+  .label {
+    margin-top: 1rem;
+  }
+
+  .icon {
+    order: 1;
+    margin-right: 3.9rem;
+    width: 9.2rem;
+  }
+}
+
+.item-5 {
+  display: flex;
+  align-items: center;
+  left: 145rem;
+  top: 96rem;
+
+  .itemWrapper {
+    order: 2;
+  }
+
+  .label {
+    margin-top: 1rem;
+  }
+
+  .icon {
+    order: 1;
+    margin-right: 3.9rem;
+    width: 11rem;
+  }
+}
+
+.item-6 {
+  display: flex;
+  align-items: flex-end;
+  left: 145rem;
+  top: 79rem;
+
+  .itemWrapper {
+    order: 2;
+  }
+
+  .label {
+    margin-top: 1rem;
+  }
+
+  .icon {
+    order: 1;
+    margin-right: 3.9rem;
+    width: 10.1rem;
+  }
+}
+
+.item-7 {
+  display: flex;
+  align-items: flex-end;
+  left: 144.7rem;
+  top: 47.5rem;
+
+  .itemWrapper {
+    order: 2;
+  }
+
+  .icon {
+    order: 1;
+    margin-right: 3.9rem;
+    width: 9.3rem;
+  }
+}
+
+.item-8 {
+  display: flex;
+  align-items: center;
+  left: 23rem;
+  top: 47rem;
+
+  .itemWrapper {
+    width: 30rem;
+    text-align: right;
+  }
+
+  .icon {
+    margin-left: 3.6rem;
+    width: 8.6rem;
+  }
+}
+
+.item-9 {
+  display: flex;
+  align-items: center;
+  left: 7.5rem;
+  top: 65.2rem;
+
+  .itemWrapper {
+    width: 45rem;
+    text-align: right;
+  }
+
+  .icon {
+    margin-left: 3.2rem;
+    width: 9.7rem;
+  }
+}
+
+.item-10 {
+  display: flex;
+  align-items: flex-end;
+  left: 7.5rem;
+  top: 94.5rem;
+
+  .itemWrapper {
+    width: 45rem;
+    text-align: right;
+  }
+
+  .icon {
+    margin-left: 3.6rem;
+    width: 8.4rem;
+  }
+}
+
+.item-11 {
+  display: flex;
+  align-items:   flex-start;
+  left: 77.5rem;
+  top: 113rem;
+
+  .itemWrapper {
+    width: 20rem;
+    text-align: right;
+  }
+
+  .icon {
+    margin-left: 2.5rem;
+    width: 8.7rem;
+  }
+}
+
+.item-12 {
+  top: 84.5rem;
+  left: 53.5rem;
+
+  .label {
+    @include fontSmall($colorLight, "Lato");
+  }
+}
+.item-13 {
+  top: 87rem;
+  left: 108.5rem;
+
+  .label {
+    @include fontSmall($colorLight, "Lato");
+  }
+}
+
+.order {
+  @include fontCounter;
+}
+
+.label {
+  margin: 0;
+  @include fontRegular;
+}
+
+.textIcon {
+  margin-top: 0;
+  width: 100%;
+  @include fontIcon;
+  text-align: center;
+}

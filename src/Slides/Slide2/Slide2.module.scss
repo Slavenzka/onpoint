@@ -1,0 +1,63 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7.7rem;
+    right: 0;
+    width: 29.5rem;
+    height: 41.1rem;
+    background-image: url("/assets/images/slide2/ice2-nearest.png");
+    background-size: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 90rem;
+    left: 45rem;
+    width: 20.7rem;
+    height: 20.2rem;
+    background-image: url("/assets/images/slide2/ice2-distance1.png");
+    background-size: cover;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+  padding: 51rem 15% 40rem 15%;
+  height: 100%;
+  @include h2;
+  font-weight: 300;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 35rem;
+    left: 16.5rem;
+    width: 8.2rem;
+    height: 7.7rem;
+    background-image: url("/assets/images/slide2/ice2-distance2.png");
+    background-size: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 118rem;
+    left: 144rem;
+    width: 14.9rem;
+    height: 15.1rem;
+    background-image: url("/assets/images/slide2/ice2-distance3.png");
+    background-size: cover;
+  }
+}

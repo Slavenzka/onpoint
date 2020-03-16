@@ -1,0 +1,245 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 25.1rem;
+    height: 39.5rem;
+    background-image: url("/assets/images/slide3/ice32-3.png");
+    background-size: cover;
+    opacity: 0.55;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 83rem;
+    left: 9.1rem;
+    width: 21.3rem;
+    height: 20.2rem;
+    background-image: url("/assets/images/slide3/ice32-2.png");
+    background-size: cover;
+    opacity: 0.44;
+  }
+}
+
+.title {
+  margin: 0;
+  padding: 23rem 0 0 17rem;
+  @include h3;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20rem;
+    right: 103rem;
+    width: 7.6rem;
+    height: 7.7rem;
+    background-image: url("/assets/images/slide3/ice32-1.png");
+    background-size: cover;
+    opacity: 0.44;
+  }
+}
+
+.diagram {
+  display: block;
+  margin-top: 15.1rem;
+  margin-left: 46.6rem;
+  width: 116.3rem;
+  height: 66rem;
+}
+
+.keyNode {
+  position: absolute;
+  top: 75rem;
+  left: 87rem;
+  margin: 0;
+  @include h4;
+}
+
+.item {
+  position: absolute;
+}
+
+.item-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  top: 31.6rem;
+  left: 93rem;
+
+  .itemWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .textIcon {
+    margin-top: 2rem;
+  }
+}
+
+.item-2 {
+  top: 48rem;
+  left: 37.5rem;
+  text-align: right;
+
+  .itemWrapper {
+    display: flex;
+  }
+
+  .order {
+    order: 2;
+    margin-left: 6.6rem;
+  }
+
+  .label {
+    order: 1;
+    text-align: right;
+  }
+}
+
+.item-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  top: 48rem;
+  left: 133.5rem;
+  text-align: left;
+
+  .itemWrapper {
+    display: flex;
+  }
+
+  .order {
+    margin-right: 7rem;
+  }
+}
+
+.item-4 {
+  display: flex;
+  align-items: flex-start;
+  left: 152.2rem;
+  top: 76.2rem;
+  bottom: auto;
+
+  .itemWrapper {
+    order: 2;
+  }
+
+  .label {
+    margin-top: 1rem;
+  }
+
+  .icon {
+    order: 1;
+    margin-right: 4.2rem;
+    width: 9.2rem;
+  }
+}
+
+.item-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 127.2rem;
+  top: 101.5rem;
+
+  .itemWrapper {
+    order: 2;
+    margin-top: 3.6rem;
+    text-align: center;
+  }
+
+  .label {
+    margin-top: 1rem;
+  }
+
+  .icon {
+    order: 1;
+    width: 11rem;
+  }
+}
+
+.item-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 98.3rem;
+  top: 100.5rem;
+
+  .itemWrapper {
+    order: 2;
+    margin-top: 2.5rem;
+    text-align: center;
+  }
+
+  .label {
+    margin-top: 1rem;
+  }
+
+  .icon {
+    order: 1;
+    width: 10.1rem;
+  }
+}
+
+.item-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 65.1rem;
+  top: 100.5rem;
+
+  .itemWrapper {
+    order: 2;
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .icon {
+    order: 1;
+    width: 9.3rem;
+  }
+}
+
+.item-8 {
+  display: flex;
+  align-items: flex-start;
+  left: 14rem;
+  top: 75rem;
+  bottom: auto;
+
+  .itemWrapper {
+    width: 30rem;
+    text-align: right;
+  }
+
+  .icon {
+    margin-left: 3.6rem;
+    width: 8.6rem;
+  }
+}
+
+.order {
+  @include fontCounter;
+}
+
+.label {
+  margin: 0;
+  @include fontRegular;
+}
+
+.textIcon {
+  margin-top: 0;
+  width: 100%;
+  @include fontIcon;
+  text-align: center;
+}

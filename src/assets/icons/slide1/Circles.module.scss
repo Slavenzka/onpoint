@@ -1,0 +1,36 @@
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+    fill-opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(3);
+    opacity: 0;
+    fill-opacity: 0;
+  }
+}
+
+.core1 {
+  animation: pulse;
+  animation-timing-function: cubic-bezier(0, 0, 1, 1);
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 48% center;
+  animation-fill-mode: both;
+  animation-delay: 0.2s;
+}
+
+.core2 {
+  animation: pulse;
+  animation-timing-function: cubic-bezier(0, 0, 1, 1);
+  animation-duration: 2s;
+  animation-delay: 1.2s;
+  animation-iteration-count: infinite;
+  transform-origin: 48% center;
+  animation-fill-mode: both;
+}

@@ -1,0 +1,148 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 2.1rem;
+    left: 4.2rem;
+    width: 43.3rem;
+    height: 41rem;
+    background-image: url("/assets/images/slide3/ice31-3.png");
+    background-size: cover;
+    opacity: 0.44;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 88.3rem;
+    right: 50.4rem;
+    width: 21.3rem;
+    height: 20.2rem;
+    background-image: url("/assets/images/slide3/ice31-2.png");
+    background-size: cover;
+    opacity: 0.44;
+  }
+}
+
+.title {
+  margin: 0;
+  padding: 23rem 0 0 17rem;
+  @include h3;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 123rem;
+    right: 15rem;
+    width: 7.6rem;
+    height: 7.7rem;
+    background-image: url("/assets/images/slide3/ice31-1.png");
+    background-size: cover;
+    opacity: 0.44;
+  }
+}
+
+.subtitle {
+  position: absolute;
+  top: 70rem;
+  right: 20rem;
+  margin: 0;
+  @include fontSmall($colorLight, "Lato");
+}
+
+.diagram {
+  display: block;
+  margin-top: 26.9rem;
+  margin-left: 48.6rem;
+  width: 115.6rem;
+  height: 52rem;
+}
+
+.keyNode {
+  position: absolute;
+  top: 98rem;
+  left: 92rem;
+  margin: 0;
+  @include fontRegular;
+}
+
+.item {
+  position: absolute;
+}
+
+.item-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  top: 44rem;
+  left: 94rem;
+
+  .itemWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textIcon {
+    margin-top: 2rem;
+  }
+}
+
+.item-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 75rem;
+  left: 49rem;
+
+  .itemWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon {
+    margin-top: 7.3rem;
+    width: 12.9rem;
+  }
+}
+
+.item-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 75rem;
+  right: 42rem;
+
+  .itemWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon {
+    margin-top: 7.3rem;
+    width: 11.4rem;
+  }
+}
+
+.order {
+  @include fontCounter;
+}
+
+.label {
+  margin: 0;
+  @include fontRegular;
+}
+
+.textIcon {
+  margin-top: 0;
+  width: 100%;
+  @include fontIcon;
+  text-align: center;
+}
