@@ -1,7 +1,11 @@
+// common
 import React from 'react'
-import css from 'Slides/Slide3-2/Slide3-2.module.scss'
-import classnames from 'classnames'
+// components
 import DiagramMedium from 'assets/icons/slide3-2/DiagramMedium'
+// external
+import classnames from 'classnames'
+// styles
+import css from 'Slides/Slide3-2/Slide3-2.module.scss'
 
 const Slide32 = ({ className }) => {
   const diagramData = [

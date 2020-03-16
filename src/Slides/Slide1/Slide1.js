@@ -1,7 +1,11 @@
+// common
 import React from 'react'
-import classnames from 'classnames'
-import css from 'Slides/Slide1/Slide1.module.scss'
+// components
 import Circles from 'assets/icons/slide1/Circles'
+// external
+import classnames from 'classnames'
+// styles
+import css from 'Slides/Slide1/Slide1.module.scss'
 
 const Slide1 = ({ className, isActive }) => {
   const pins = [

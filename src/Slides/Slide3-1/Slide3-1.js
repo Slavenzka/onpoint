@@ -1,7 +1,11 @@
+// common
 import React from 'react'
-import css from 'Slides/Slide3-1/Slide3-1.module.scss'
-import classnames from 'classnames'
+// components
 import DiagramSmall from 'assets/icons/slide3-1/DiagramSmall'
+// external
+import classnames from 'classnames'
+// styles
+import css from 'Slides/Slide3-1/Slide3-1.module.scss'
 
 const Slide31 = ({ className }) => {
   const diagramData = [
