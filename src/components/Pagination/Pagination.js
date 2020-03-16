@@ -1,6 +1,9 @@
+// common
 import React from 'react'
-import css from './Pagination.module.scss'
+// external
 import classnames from 'classnames'
+// styles
+import css from './Pagination.module.scss'
 
 const Pagination = ({ data, activeSlide }) => (
   <ul className={css.paginationList}>

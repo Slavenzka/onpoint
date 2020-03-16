@@ -1,6 +1,9 @@
+// common
 import React from 'react'
-import css from './Slide2.module.scss'
+// external
 import classnames from 'classnames'
+// styles
+import css from './Slide2.module.scss'
 
 const Slide2 = ({ className }) => (
   <div className={classnames('slide', css.wrapper, className)}>

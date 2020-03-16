@@ -1,20 +1,23 @@
 // common
 import React, { Component } from 'react';
+// components
 import Slide1 from 'Slides/Slide1/Slide1'
 import Slide2 from 'Slides/Slide2/Slide2'
 import Slide3 from 'Slides/Slide3/Slide3'
-// components
-import css from 'App.module.scss'
-import classnames from 'classnames'
-import ScrollDownHint from 'components/ScrollDownHint/ScrollDownHint'
 import Pagination from 'components/Pagination/Pagination'
 import DragScroll from 'components/DragScroll/DragScroll'
+import MainSlides from 'components/MainSlides/MainSlides'
+// external
+import classnames from 'classnames'
+// styles
+import css from './App.module.scss'
 
 class App extends Component {
   constructor (props) {
     super(props)
     this.slides = [Slide1, Slide2, Slide3]
     this.scrollTimeline = [1988, 2009, 2016]
+    // target of touch scroll event listeners
     this.wrapperRef = null
   }
 
@@ -104,27 +107,6 @@ class App extends Component {
       swipeDirection
     } = this.state
 
-    const content = new Array(slidesQty).fill('').map((slide, index) => {
-      const Component = this.slides[index]
-      return (
-        <div className={css.slide} key={index}>
-          <Component
-            className={classnames({
-              [css.slideUp]: swipeDirection === 'up' && activeSlide === index,
-              [css.slideDown]: index !== slidesQty - 1 && swipeDirection === 'down' && activeSlide === index,
-            })}
-            isActive={index === this.state.activeSlide}
-            activeSubslide={index === slidesQty - 1 && activeSubslide}
-          />
-          {index === 0 &&
-            <ScrollDownHint isVisible={this.state.activeSlide === 0} />
-          }
-        </div>
-      )
-    })
-
-    console.log(activeSubslide)
-
     return (
       <div
         className={css.container}
@@ -138,7 +120,13 @@ class App extends Component {
             className={css.slideWrapper}
             style={{ backgroundImage: 'url("assets/images/slide-bg.jpg")' }}
           >
-            { content }
+            <MainSlides
+              slides={this.slides}
+              slidesQty={slidesQty}
+              swipeDirection={swipeDirection}
+              activeSlide={activeSlide}
+              activeSubslide={activeSubslide}
+            />
           </div>
         </div>
         <div className={css.pagination}>

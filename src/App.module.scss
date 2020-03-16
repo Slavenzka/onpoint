@@ -19,23 +19,6 @@
   background-repeat: no-repeat;
 }
 
-.slide {
-  position: relative;
-  overflow: hidden;
-}
-
-.slideUp {
-  animation-delay: 0.02s;
-  animation-duration: 0.3s;
-  animation-name: slideUp;
-}
-
-.slideDown {
-  animation-delay: 0.02s;
-  animation-duration: 0.3s;
-  animation-name: slideDown;
-}
-
 .pagination {
   position: absolute;
   top: 70.5rem;

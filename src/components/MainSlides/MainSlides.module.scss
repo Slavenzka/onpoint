@@ -1,0 +1,19 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.slideUp {
+  animation-delay: 0.02s;
+  animation-duration: 0.3s;
+  animation-name: slideUp;
+}
+
+.slideDown {
+  animation-delay: 0.02s;
+  animation-duration: 0.3s;
+  animation-name: slideDown;
+}

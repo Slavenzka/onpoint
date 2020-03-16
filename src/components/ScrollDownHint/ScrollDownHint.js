@@ -1,7 +1,11 @@
+// common
 import React from 'react'
-import css from './ScrollDownHint.module.scss'
+// components
 import ArrowDown from './_assets/ArrowDown'
+// external
 import classnames from 'classnames'
+// styles
+import css from './ScrollDownHint.module.scss'
 
 const ScrollDownHint = ({ isVisible, ...props }) => (
   <div className={classnames(css.wrapper, { [css.wrapperVisible]: isVisible })}>

@@ -1,9 +1,13 @@
+// common
 import React, { Component } from 'react'
-import Slide33 from 'Slides/Slide3-3/Slide3-3'
-import Slide32 from 'Slides/Slide3-2/Slide3-2'
-import css from './Slide3.module.scss'
-import classnames from 'classnames'
+// components
 import Slide31 from 'Slides/Slide3-1/Slide3-1'
+import Slide32 from 'Slides/Slide3-2/Slide3-2'
+import Slide33 from 'Slides/Slide3-3/Slide3-3'
+// external
+import classnames from 'classnames'
+// styles
+import css from './Slide3.module.scss'
 
 class Slide3 extends Component {
   constructor (props) {
@@ -24,7 +28,10 @@ class Slide3 extends Component {
     })
 
     return (
-      <div className={classnames(css.wrapper, this.props.className)} style={{ transform: `translateX(${ (-activeSubslide) * 100 }vw)` }}>
+      <div
+        className={classnames(css.wrapper, this.props.className)}
+        style={{ transform: `translateX(${ (-activeSubslide) * 100 }vw)` }}
+      >
         { content }
       </div>
     )

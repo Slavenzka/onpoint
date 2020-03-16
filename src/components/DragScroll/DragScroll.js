@@ -1,4 +1,6 @@
+// common
 import React, { Component } from 'react'
+//styles
 import css from './DragScroll.module.scss'
 
 class DragScroll extends Component {
